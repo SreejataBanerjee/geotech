@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>order now</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f6396163d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: beige;
+        }
+        .top{
+          padding: 30px;
+        }
+        .top h1{
+            text-align: center;
+        }
+        #menuo {
+          max-width: 800px;
+          margin: 0 auto;
+        }
+    
+        .menu-items {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+          border: 1px solid #ccc;
+          margin-bottom: 5px;
+        }
+    
+        .food-name {
+          flex-basis: 50%;
+        }
+    
+        .food-price {
+          flex-basis: 30%;
+        }
+    
+        .add-to-cart {
+          flex-basis: 20%;
+          text-align: right;
+        }
+    
+        .cart {
+          max-width: 800px;
+          margin: 20px auto;
+        }
+    
+        .cart-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+          border: 1px solid #ccc;
+          margin-bottom: 5px;
+        }
+    
+        .item-quantity {
+          flex-basis: 30%;
+        }
+    
+        .item-name {
+          flex-basis: 50%;
+        }
+    
+        .item-total {
+          flex-basis: 20%;
+        }
+    
+        .order-btn {
+          display: block;
+          margin: 20px auto;
+          padding: 10px 20px;
+          background-color: #3498db;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+        }
+    
+        .order-btn:hover {
+          background-color: #2980b9;
+        }
+      </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">GeoTech</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="culture.html">Culture</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="H&c.html">Health & Food</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                </ul>
+                <div class="log-in">
+                <ul class="nav-list">
+                  <li class="nav-item-in">
+                    <a class="nav-link" href="Signin.html" target="_blank"><i class="fa-solid fa-user"></i></a>
+                  </li>
+                </ul> 
+                </div> 
+              </div>
+            </div>
+          </nav>
+        <div class="top">
+            <h1>ORDER NOW</h1>
+        </div>
+      
+
+        
+      <div id="menu">
+    
+      
+          <!-- New menu items -->
+          <div class="food heading">
+            <h3>Breads and Sandwiches</h3>
+            <hr>
+            <hr>
+          <div class="menu-item">
+            <div class="food-name">Veg Sandwich</div>
+            <div class="food-price">₹22</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Veg Sandwich', 22)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Veg Cheese Sandwich</div>
+            <div class="food-price">₹32</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Veg Cheese Sandwich', 32)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Egg Sandwich</div>
+            <div class="food-price">₹33</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Egg Sandwich', 33)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Egg Cheese Sandwich</div>
+            <div class="food-price">₹38</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Egg Cheese Sandwich', 38)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Chicken Sandwich</div>
+            <div class="food-price">₹42</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Chicken Sandwich', 42)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Chicken Cheese Sandwich</div>
+            <div class="food-price">₹52</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Chicken Cheese Sandwich', 52)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Egg Chicken Sandwich</div>
+            <div class="food-price">₹55</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Egg Chicken Sandwich', 55)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Egg Chicken Cheese Sandwich</div>
+            <div class="food-price">₹60</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Egg Chicken Cheese Sandwich', 60)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">French Toast(4 Breads)</div>
+            <div class="food-price">₹23</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('French Toast(4 Breads)', 23)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">French Toast(4 Breads,2 Eggs)</div>
+            <div class="food-price">₹28</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('French Toast(4 Breads,2 Eggs)', 28)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="food heading">
+          <h3>Maggi and Pasta</h3>
+          <hr>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Maggi</div>
+            <div class="food-price">₹16</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Maggi', 16)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Fried Maggi</div>
+            <div class="food-price">₹21</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Fried Maggi', 21)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Egg Maggi</div>
+            <div class="food-price">₹23</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Egg Maggi', 23)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Egg Fried Maggi</div>
+            <div class="food-price">₹28</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Egg Fried Maggi', 28)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Pasta</div>
+            <div class="food-price">₹30</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Pasta', 30)">Add to Cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <div class="food-name">Egg Pasta</div>
+            <div class="food-price">₹37</div>
+            <div class="add-to-cart">
+              <button onclick="addToCart('Egg Pasta', 37)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <hr>
+           
+        <div class="food heading">
+          <h3>Others</h3>
+          <hr>
+          <hr>
+        <div class="menu-item">
+          <div class="food-name">Omlette</div>
+          <div class="food-price">₹10</div>
+          <div class="add-to-cart">
+            <button onclick="addToCart('Omlette', 10)">Add to Cart</button>
+          </div>
+        </div>
+        <hr>
+        <div class="menu-item">
+          <div class="food-name">Double Omlette</div>
+          <div class="food-price">₹20</div>
+          <div class="add-to-cart">
+            <button onclick="addToCart('Double Omlette', 20)">Add to Cart</button>
+          </div>
+        </div>
+        <hr>
+        <div class="menu-item">
+          <div class="food-name">Poach</div>
+          <div class="food-price">₹30</div>
+          <div class="add-to-cart">
+            <button onclick="addToCart('Poach', 30)">Add to Cart</button>
+          </div>
+        </div>
+        <hr>
+        <div class="menu-item">
+          <div class="food-name">Double Poach</div>
+          <div class="food-price">₹40</div>
+          <div class="add-to-cart">
+            <button onclick="addToCart('Double Poach', 40)">Add to Cart</button>
+          </div>
+        </div>
+        <hr>
+        <div class="menu-item">
+          <div class="food-name">Boiled Egg</div>
+          <div class="food-price">₹50</div>
+          <div class="add-to-cart">
+            <button onclick="addToCart('Boiled Egg', 50)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      </div>
+      <div class="cart" id="cart">
+        <h2>Cart</h2>
+        <div class="cart-item" id="cart-item">
+          <div class="item-quantity"></div>
+          <div class="item-name"></div>
+          <div class="item-total"></div>
+        </div>
+      </div>
+    
+      <button class="order-btn" onclick="placeOrder()">Place Order</button>
+    
+      <script>
+        let cartItems = [];
+    
+        function addToCart(foodName, foodPrice) {
+          const itemIndex = cartItems.findIndex(item => item.name === foodName);
+          if (itemIndex > -1) {
+            if (cartItems[itemIndex].quantity < 5) {
+              cartItems[itemIndex].quantity++;
+              updateCartView();
+            } else {
+              alert("You can't add more than 5 units of a food item.");
+            }
+          } else {
+            if (cartItems.length < 3) {
+              cartItems.push({
+                name: foodName,
+                price: foodPrice,
+                quantity: 1
+              });
+              updateCartView();
+            } else {
+              alert("You can't order more than 3 items at once.");
+            }
+          }
+        }
+    
+        function updateCartView() {
+          const cartElement = document.getElementById("cart-item");
+          cartElement.innerHTML = "";
+    
+          let totalAmount = 0;
+    
+          cartItems.forEach(item => {
+            const itemElement = document.createElement("div");
+            itemElement.classList.add("cart-item");
+    
+            const quantityElement = document.createElement("div");
+            quantityElement.classList.add("item-quantity");
+            quantityElement.textContent = item.quantity;
+            itemElement.appendChild(quantityElement);
+    
+            const nameElement = document.createElement("div");
+            nameElement.classList.add("item-name");
+            nameElement.textContent = item.name;
+            itemElement.appendChild(nameElement);
+    
+            const totalElement = document.createElement("div");
+            totalElement.classList.add("item-total");
+            const itemTotal = item.price * item.quantity;
+            totalElement.textContent = "₹" + itemTotal;
+            itemElement.appendChild(totalElement);
+    
+            totalAmount += itemTotal;
+    
+            cartElement.appendChild(itemElement);
+          });
+    
+          if (cartItems.length === 0) {
+            const emptyCartElement = document.createElement("div");
+            emptyCartElement.textContent = "Your cart is empty.";
+            cartElement.appendChild(emptyCartElement);
+          }
+    
+          const totalElement = document.createElement("div");
+          totalElement.classList.add("cart-item");
+          totalElement.style.fontWeight = "bold";
+          totalElement.textContent = "Total:₹ " + totalAmount;
+          cartElement.appendChild(totalElement);
+        }
+    
+        function placeOrder() {
+          // Implement the order placement logic here
+          alert("Order placed successfully!");
+          cartItems = [];
+          updateCartView();
+        }
+      </script>
+</body>
+</html>

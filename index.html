@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GeoTech Cafe Web Portal
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f6396163d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">GeoTech</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="culture.html">Culture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="H&c.html">Health & Food</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+            <div class="log-in">
+            <ul class="nav-list">
+            <!-- <li class="nav-item-in">
+                <a class="nav-link"  href="login2.html" target="_blank">Log in</a>
+              </li>
+
+            <li class="nav-item-in">
+                <a class="nav-link" href="Sign.html" target="_blank">Sign up</a>
+              </li> -->
+              <li class="nav-item-in">
+                <a class="nav-link" href="Signin.html" target="_blank"><i class="fa-solid fa-user"></i></a>
+              </li>
+            </ul> 
+            </div> 
+          </div>
+        </div>
+      </nav>
+      <div class="top-container">
+      <h1>Take a break</h1>
+      <h4>Relax, unwind, and let our cafe awaken your senses.</h4>
+        
+      <a href="order.html" class="order-button">Order Now</a>
+    </div>
+
+
+    <div class="featured">
+      <div>
+        <h1>Featured Items</h1>
+        <h2>Everyone's favourite</h2>
+      </div>
+          <div class="image-slides">
+            <img src="frenchtoastwithboiledegg.jpg" alt="frenchtoast">
+            <img src="Cappucino.jpeg" alt="coffee">
+            <img src="oatswitheggs.jpg" alt="oats">
+          </div>
+    </div>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <h2>Gallery</h2>
+        <div class="carousel-item active">
+          <img src="people.jpg" class="d-block w-100" alt="1" height="500px">
+        </div> 
+        <div class="carousel-item">
+          <img src="sunnysideup.jpg" class="d-block w-100" alt="2" height="500px">
+        </div>
+        <div class="carousel-item">
+          <img src="Friedmaggi.jpg" class="d-block w-100" alt="3" height = "500px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                   <h1 class="sub-title">Contact</h1><hr>
+                   <h5>Have a Question? We are here for you.</h5>
+                   
+                   <p> <span>Gmail</span><br><br><i class="fa-solid fa-envelope"></i> cafe@geotechinfo.net</p>
+                   <p><span>Phone</span><br><br><i class="fa-solid fa-phone"></i> +919830749001<br>  Mr. Sudip Mitra</p>
+                   <p><span>Address</span><br><br><i class="fa-solid fa-location-dot"></i>EP& GP, Infinity Business Centre<br> Infinity Benchmark, 18th Floor, Plot G1, EP Block<br> Sector V, Bidhannagar<br> Kolkata- 700091</p>
+                   <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    
+                   </div>
+                   
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows ="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class=" btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">With <i class="fa-solid fa-heart"></i> GeoTech Info Services </div>
+       </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
